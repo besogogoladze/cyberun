@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cyberun/static/css/main.00ef0d8e.css",
+    "main.js": "/cyberun/static/js/main.55bb87c5.js",
+    "index.html": "/cyberun/index.html",
+    "main.00ef0d8e.css.map": "/cyberun/static/css/main.00ef0d8e.css.map",
+    "main.55bb87c5.js.map": "/cyberun/static/js/main.55bb87c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00ef0d8e.css",
+    "static/js/main.55bb87c5.js"
+  ]
+}
