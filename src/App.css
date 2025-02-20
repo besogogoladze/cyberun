@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+ul {
+  padding: 0;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+  list-style: none;
+  padding: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  margin: 0;
+}
+.sideNavigationUl {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 10px;
+  align-self: center;
+}
+.editProfile {
+  width: 100%;
+  max-width: calc(100% - 71px);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.editProfileHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.editProfileName {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.editProfileNameInput {
+  width: 100%;
+}
+.editProfileCountry {
+  width: 100%;
+}
+.editProfileButtons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.editProfileCancelButton {
+  color: #bca7d7 !important;
+  border: 1px solid #bca7d7 !important;
+}
+.editProfileCancelButton:hover {
+  background-color: #bca7d7 !important;
+  color: white !important;
+}
+.editProfileSaveButton {
+  background-color: #bca7d7 !important;
+  color: white !important;
+}
+.editProfileSaveButton:hover {
+  color: #bca7d7 !important;
+  border: 1px solid #bca7d7 !important;
+  background-color: #fff !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 1000px) {
+  .blog-list {
+    max-width: 800px !important;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 700px) {
+  .editProfileForm {
+    padding: 0 20px;
+  }
+  .editProfileHeader {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .blog-list {
+    max-width: 400px !important;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .editProfileName {
+    flex-wrap: wrap;
+    gap: unset;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .editProfileHeader {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .editProfileHeader h1 {
+    text-align: center;
+  }
+  .blog-list {
+    max-width: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .collapseButton {
+    display: none;
+  }
+  .sideNavigationText {
+    display: none;
   }
 }
